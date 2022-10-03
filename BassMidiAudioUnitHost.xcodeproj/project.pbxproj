@@ -1,0 +1,1296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43710E5927E8847A00C20F9B /* BassMidiAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903CFE727E37343007ED372 /* BassMidiAudioUnit.swift */; };
+		43710E5B27E885AB00C20F9B /* FourCharCode+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43710E5A27E885AB00C20F9B /* FourCharCode+String.swift */; };
+		43B4C3FA27ECB25700769C37 /* BassMidiParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903CFE927E37343007ED372 /* BassMidiParameters.swift */; };
+		9903CF3527E3688F007ED372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903CF3427E3688F007ED372 /* AppDelegate.swift */; };
+		9903CF3727E3688F007ED372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903CF3627E3688F007ED372 /* SceneDelegate.swift */; };
+		9903CF3927E3688F007ED372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903CF3827E3688F007ED372 /* ViewController.swift */; };
+		9903CF3C27E3688F007ED372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9903CF3A27E3688F007ED372 /* Main.storyboard */; };
+		9903CF3E27E36892007ED372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9903CF3D27E36892007ED372 /* Assets.xcassets */; };
+		9903CF4127E36892007ED372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9903CF3F27E36892007ED372 /* LaunchScreen.storyboard */; };
+		9903CF4C27E36892007ED372 /* BassMidiAudioUnitHostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903CF4B27E36892007ED372 /* BassMidiAudioUnitHostTests.swift */; };
+		9903CF5627E36892007ED372 /* BassMidiAudioUnitHostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903CF5527E36892007ED372 /* BassMidiAudioUnitHostUITests.swift */; };
+		9903CF5827E36892007ED372 /* BassMidiAudioUnitHostUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903CF5727E36892007ED372 /* BassMidiAudioUnitHostUITestsLaunchTests.swift */; };
+		9903CFDA27E37343007ED372 /* DSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 9903CFD927E37343007ED372 /* DSPKernel.hpp */; };
+		9903CFDE27E37343007ED372 /* BufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 9903CFDD27E37343007ED372 /* BufferedAudioBus.hpp */; };
+		9903CFE127E37343007ED372 /* BassMidiDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 9903CFE027E37343007ED372 /* BassMidiDSPKernel.hpp */; };
+		9903CFEE27E37343007ED372 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9903CFEC27E37343007ED372 /* MainInterface.storyboard */; };
+		9903CFFF27E3737F007ED372 /* BassMidiAudioUnitFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9903CFFE27E3737F007ED372 /* BassMidiAudioUnitFramework.docc */; };
+		9903D00527E3737F007ED372 /* BassMidiAudioUnitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9903CFFB27E3737F007ED372 /* BassMidiAudioUnitFramework.framework */; };
+		9903D00C27E3737F007ED372 /* BassMidiAudioUnitFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903D00B27E3737F007ED372 /* BassMidiAudioUnitFrameworkTests.swift */; };
+		9903D00D27E3737F007ED372 /* BassMidiAudioUnitFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9903CFFD27E3737F007ED372 /* BassMidiAudioUnitFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9903D01027E3737F007ED372 /* BassMidiAudioUnitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9903CFFB27E3737F007ED372 /* BassMidiAudioUnitFramework.framework */; };
+		9903D01127E3737F007ED372 /* BassMidiAudioUnitFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9903CFFB27E3737F007ED372 /* BassMidiAudioUnitFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9903D01827E373F1007ED372 /* BassMidiAudioUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9903CFD427E37343007ED372 /* BassMidiAudioUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9903D01927E37416007ED372 /* BassMidiAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9903CFD527E37343007ED372 /* BassMidiAudioUnit.m */; };
+		9903D01A27E3742E007ED372 /* BassMidiDSPKernel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9903CFE027E37343007ED372 /* BassMidiDSPKernel.hpp */; };
+		9903D01B27E3743C007ED372 /* BassMidiDSPKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9903CFE227E37343007ED372 /* BassMidiDSPKernel.mm */; };
+		9903D01C27E37448007ED372 /* BassMidiDSPKernelAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9903CFDF27E37343007ED372 /* BassMidiDSPKernelAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9903D01D27E3745C007ED372 /* DSPKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9903CFDB27E37343007ED372 /* DSPKernel.mm */; };
+		9903D01E27E3745E007ED372 /* DSPKernel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9903CFD927E37343007ED372 /* DSPKernel.hpp */; };
+		9903D01F27E37461007ED372 /* BufferedAudioBus.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9903CFDD27E37343007ED372 /* BufferedAudioBus.hpp */; };
+		9903D03127E37584007ED372 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9903CFCB27E3703F007ED372 /* Accelerate.framework */; };
+		9903D03327E37590007ED372 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9903D03227E37590007ED372 /* UIKit.framework */; };
+		9903D03627E37775007ED372 /* Sequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903D03527E37775007ED372 /* Sequencer.swift */; };
+		99B6A03C27FC614C001B0D07 /* BassMidiWrapper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9994590B27FB4D6A00EBB00F /* BassMidiWrapper.hpp */; };
+		99B6A03D27FC6174001B0D07 /* BassMidiWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9994590A27FB4D6A00EBB00F /* BassMidiWrapper.mm */; };
+		99C9C9DE28E4A2550050D1B0 /* Courante Bach Suite 1.mid in Resources */ = {isa = PBXBuildFile; fileRef = 99C9C9D728E4A2550050D1B0 /* Courante Bach Suite 1.mid */; };
+		99C9C9DF28E4A2550050D1B0 /* Drums only.mid in Resources */ = {isa = PBXBuildFile; fileRef = 99C9C9D828E4A2550050D1B0 /* Drums only.mid */; };
+		99C9C9E028E4A2550050D1B0 /* Tutu - Miles Davis.mid in Resources */ = {isa = PBXBuildFile; fileRef = 99C9C9D928E4A2550050D1B0 /* Tutu - Miles Davis.mid */; };
+		99C9C9E228E4A2550050D1B0 /* death-and-the-maiden3.mid in Resources */ = {isa = PBXBuildFile; fileRef = 99C9C9DB28E4A2550050D1B0 /* death-and-the-maiden3.mid */; };
+		99C9C9E428E4A2550050D1B0 /* book1-prelude01.mid in Resources */ = {isa = PBXBuildFile; fileRef = 99C9C9DD28E4A2550050D1B0 /* book1-prelude01.mid */; };
+		99C9C9E928E4A3140050D1B0 /* Soundfont - FluidR3 GM (20011225).sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 99C9C9E628E4A3140050D1B0 /* Soundfont - FluidR3 GM (20011225).sf2 */; };
+		99EF7ACB27E87E2800BFB6DB /* bassmidi.h in Headers */ = {isa = PBXBuildFile; fileRef = 99EF7AC527E87E2800BFB6DB /* bassmidi.h */; };
+		99EF7ACD27E87E2800BFB6DB /* libbassmidi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EF7AC627E87E2800BFB6DB /* libbassmidi.xcframework */; };
+		99EF7ACE27E87E2800BFB6DB /* libbass.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EF7AC727E87E2800BFB6DB /* libbass.xcframework */; };
+		99EF7ACF27E87E2800BFB6DB /* libbass.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EF7AC727E87E2800BFB6DB /* libbass.xcframework */; };
+		99EF7AD027E87E2800BFB6DB /* bassmidi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 99EF7AC827E87E2800BFB6DB /* bassmidi.txt */; };
+		99EF7AD127E87E2800BFB6DB /* bassmidi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 99EF7AC827E87E2800BFB6DB /* bassmidi.txt */; };
+		99EF7AD227E87E2800BFB6DB /* bassmidi.chm in Resources */ = {isa = PBXBuildFile; fileRef = 99EF7AC927E87E2800BFB6DB /* bassmidi.chm */; };
+		99EF7AD327E87E2800BFB6DB /* bassmidi.chm in Resources */ = {isa = PBXBuildFile; fileRef = 99EF7AC927E87E2800BFB6DB /* bassmidi.chm */; };
+		99EF7AD427E87E2800BFB6DB /* bass.h in Headers */ = {isa = PBXBuildFile; fileRef = 99EF7ACA27E87E2800BFB6DB /* bass.h */; };
+		99EF7AD527E87E5100BFB6DB /* libbassmidi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EF7AC627E87E2800BFB6DB /* libbassmidi.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9903CF4827E36892007ED372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9903CF2927E3688F007ED372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9903CF3027E3688F007ED372;
+			remoteInfo = BassMidiAudioUnitHost;
+		};
+		9903CF5227E36892007ED372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9903CF2927E3688F007ED372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9903CF3027E3688F007ED372;
+			remoteInfo = BassMidiAudioUnitHost;
+		};
+		9903D00627E3737F007ED372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9903CF2927E3688F007ED372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9903CFFA27E3737F007ED372;
+			remoteInfo = BassMidiAudioUnitFramework;
+		};
+		9903D00827E3737F007ED372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9903CF2927E3688F007ED372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9903CF3027E3688F007ED372;
+			remoteInfo = BassMidiAudioUnitHost;
+		};
+		9903D00E27E3737F007ED372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9903CF2927E3688F007ED372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9903CFFA27E3737F007ED372;
+			remoteInfo = BassMidiAudioUnitFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9903CF8D27E369B9007ED372 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CFAD27E36D96007ED372 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9903D01127E3737F007ED372 /* BassMidiAudioUnitFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		43710E5A27E885AB00C20F9B /* FourCharCode+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FourCharCode+String.swift"; sourceTree = "<group>"; };
+		9903CF3127E3688F007ED372 /* BassMidiAudioUnitHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BassMidiAudioUnitHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9903CF3427E3688F007ED372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9903CF3627E3688F007ED372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9903CF3827E3688F007ED372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9903CF3B27E3688F007ED372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9903CF3D27E36892007ED372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9903CF4027E36892007ED372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9903CF4227E36892007ED372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9903CF4727E36892007ED372 /* BassMidiAudioUnitHostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BassMidiAudioUnitHostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9903CF4B27E36892007ED372 /* BassMidiAudioUnitHostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BassMidiAudioUnitHostTests.swift; sourceTree = "<group>"; };
+		9903CF5127E36892007ED372 /* BassMidiAudioUnitHostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BassMidiAudioUnitHostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9903CF5527E36892007ED372 /* BassMidiAudioUnitHostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BassMidiAudioUnitHostUITests.swift; sourceTree = "<group>"; };
+		9903CF5727E36892007ED372 /* BassMidiAudioUnitHostUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BassMidiAudioUnitHostUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9903CFCB27E3703F007ED372 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		9903CFD127E37343007ED372 /* BassMidi.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BassMidi.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9903CFD427E37343007ED372 /* BassMidiAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BassMidiAudioUnit.h; sourceTree = "<group>"; };
+		9903CFD527E37343007ED372 /* BassMidiAudioUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BassMidiAudioUnit.m; sourceTree = "<group>"; };
+		9903CFD927E37343007ED372 /* DSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DSPKernel.hpp; sourceTree = "<group>"; };
+		9903CFDB27E37343007ED372 /* DSPKernel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DSPKernel.mm; sourceTree = "<group>"; };
+		9903CFDD27E37343007ED372 /* BufferedAudioBus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BufferedAudioBus.hpp; sourceTree = "<group>"; };
+		9903CFDF27E37343007ED372 /* BassMidiDSPKernelAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BassMidiDSPKernelAdapter.h; sourceTree = "<group>"; };
+		9903CFE027E37343007ED372 /* BassMidiDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BassMidiDSPKernel.hpp; sourceTree = "<group>"; };
+		9903CFE227E37343007ED372 /* BassMidiDSPKernel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BassMidiDSPKernel.mm; sourceTree = "<group>"; };
+		9903CFE527E37343007ED372 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		9903CFE727E37343007ED372 /* BassMidiAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BassMidiAudioUnit.swift; path = "Audio Unit/BassMidiAudioUnit.swift"; sourceTree = "<group>"; };
+		9903CFE927E37343007ED372 /* BassMidiParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BassMidiParameters.swift; path = "Audio Unit/BassMidiParameters.swift"; sourceTree = "<group>"; };
+		9903CFEB27E37343007ED372 /* BassMidi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BassMidi-Bridging-Header.h"; sourceTree = "<group>"; };
+		9903CFED27E37343007ED372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9903CFEF27E37343007ED372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9903CFFB27E3737F007ED372 /* BassMidiAudioUnitFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BassMidiAudioUnitFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9903CFFD27E3737F007ED372 /* BassMidiAudioUnitFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BassMidiAudioUnitFramework.h; sourceTree = "<group>"; };
+		9903CFFE27E3737F007ED372 /* BassMidiAudioUnitFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = BassMidiAudioUnitFramework.docc; sourceTree = "<group>"; };
+		9903D00427E3737F007ED372 /* BassMidiAudioUnitFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BassMidiAudioUnitFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9903D00B27E3737F007ED372 /* BassMidiAudioUnitFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BassMidiAudioUnitFrameworkTests.swift; sourceTree = "<group>"; };
+		9903D03227E37590007ED372 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9903D03527E37775007ED372 /* Sequencer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequencer.swift; sourceTree = "<group>"; };
+		9994590A27FB4D6A00EBB00F /* BassMidiWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BassMidiWrapper.mm; sourceTree = "<group>"; };
+		9994590B27FB4D6A00EBB00F /* BassMidiWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BassMidiWrapper.hpp; sourceTree = "<group>"; };
+		99C9C9D728E4A2550050D1B0 /* Courante Bach Suite 1.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Courante Bach Suite 1.mid"; sourceTree = "<group>"; };
+		99C9C9D828E4A2550050D1B0 /* Drums only.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Drums only.mid"; sourceTree = "<group>"; };
+		99C9C9D928E4A2550050D1B0 /* Tutu - Miles Davis.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Tutu - Miles Davis.mid"; sourceTree = "<group>"; };
+		99C9C9DB28E4A2550050D1B0 /* death-and-the-maiden3.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "death-and-the-maiden3.mid"; sourceTree = "<group>"; };
+		99C9C9DD28E4A2550050D1B0 /* book1-prelude01.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "book1-prelude01.mid"; sourceTree = "<group>"; };
+		99C9C9E628E4A3140050D1B0 /* Soundfont - FluidR3 GM (20011225).sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soundfont - FluidR3 GM (20011225).sf2"; sourceTree = "<group>"; };
+		99EF7AC527E87E2800BFB6DB /* bassmidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bassmidi.h; sourceTree = "<group>"; };
+		99EF7AC627E87E2800BFB6DB /* libbassmidi.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libbassmidi.xcframework; sourceTree = "<group>"; };
+		99EF7AC727E87E2800BFB6DB /* libbass.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libbass.xcframework; sourceTree = "<group>"; };
+		99EF7AC827E87E2800BFB6DB /* bassmidi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bassmidi.txt; sourceTree = "<group>"; };
+		99EF7AC927E87E2800BFB6DB /* bassmidi.chm */ = {isa = PBXFileReference; lastKnownFileType = file; path = bassmidi.chm; sourceTree = "<group>"; };
+		99EF7ACA27E87E2800BFB6DB /* bass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bass.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9903CF2E27E3688F007ED372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9903D01027E3737F007ED372 /* BassMidiAudioUnitFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CF4427E36892007ED372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CF4E27E36892007ED372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CFCE27E37343007ED372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EF7ACE27E87E2800BFB6DB /* libbass.xcframework in Frameworks */,
+				99EF7AD527E87E5100BFB6DB /* libbassmidi.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CFF827E3737F007ED372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9903D03327E37590007ED372 /* UIKit.framework in Frameworks */,
+				99EF7ACD27E87E2800BFB6DB /* libbassmidi.xcframework in Frameworks */,
+				99EF7ACF27E87E2800BFB6DB /* libbass.xcframework in Frameworks */,
+				9903D03127E37584007ED372 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903D00127E3737F007ED372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9903D00527E3737F007ED372 /* BassMidiAudioUnitFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9903CF2827E3688F007ED372 = {
+			isa = PBXGroup;
+			children = (
+				9903CF3327E3688F007ED372 /* BassMidiAudioUnitHost */,
+				9903CF4A27E36892007ED372 /* BassMidiAudioUnitHostTests */,
+				9903CF5427E36892007ED372 /* BassMidiAudioUnitHostUITests */,
+				9903CFD227E37343007ED372 /* BassMidi */,
+				9903CFFC27E3737F007ED372 /* BassMidiAudioUnitFramework */,
+				9903D00A27E3737F007ED372 /* BassMidiAudioUnitFrameworkTests */,
+				9903CF3227E3688F007ED372 /* Products */,
+				9903CFCA27E3703F007ED372 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9903CF3227E3688F007ED372 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9903CF3127E3688F007ED372 /* BassMidiAudioUnitHost.app */,
+				9903CF4727E36892007ED372 /* BassMidiAudioUnitHostTests.xctest */,
+				9903CF5127E36892007ED372 /* BassMidiAudioUnitHostUITests.xctest */,
+				9903CFD127E37343007ED372 /* BassMidi.appex */,
+				9903CFFB27E3737F007ED372 /* BassMidiAudioUnitFramework.framework */,
+				9903D00427E3737F007ED372 /* BassMidiAudioUnitFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9903CF3327E3688F007ED372 /* BassMidiAudioUnitHost */ = {
+			isa = PBXGroup;
+			children = (
+				9903D03927E377A1007ED372 /* Resources */,
+				9903CF3427E3688F007ED372 /* AppDelegate.swift */,
+				9903CF3627E3688F007ED372 /* SceneDelegate.swift */,
+				9903CF3827E3688F007ED372 /* ViewController.swift */,
+				9903D03527E37775007ED372 /* Sequencer.swift */,
+				9903CF3A27E3688F007ED372 /* Main.storyboard */,
+				9903CF3D27E36892007ED372 /* Assets.xcassets */,
+				9903CF3F27E36892007ED372 /* LaunchScreen.storyboard */,
+				9903CF4227E36892007ED372 /* Info.plist */,
+			);
+			path = BassMidiAudioUnitHost;
+			sourceTree = "<group>";
+		};
+		9903CF4A27E36892007ED372 /* BassMidiAudioUnitHostTests */ = {
+			isa = PBXGroup;
+			children = (
+				9903CF4B27E36892007ED372 /* BassMidiAudioUnitHostTests.swift */,
+			);
+			path = BassMidiAudioUnitHostTests;
+			sourceTree = "<group>";
+		};
+		9903CF5427E36892007ED372 /* BassMidiAudioUnitHostUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9903CF5527E36892007ED372 /* BassMidiAudioUnitHostUITests.swift */,
+				9903CF5727E36892007ED372 /* BassMidiAudioUnitHostUITestsLaunchTests.swift */,
+			);
+			path = BassMidiAudioUnitHostUITests;
+			sourceTree = "<group>";
+		};
+		9903CFCA27E3703F007ED372 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9903D03227E37590007ED372 /* UIKit.framework */,
+				9903CFCB27E3703F007ED372 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9903CFD227E37343007ED372 /* BassMidi */ = {
+			isa = PBXGroup;
+			children = (
+				9903CFE727E37343007ED372 /* BassMidiAudioUnit.swift */,
+				9903CFE927E37343007ED372 /* BassMidiParameters.swift */,
+				43710E5A27E885AB00C20F9B /* FourCharCode+String.swift */,
+				9903CFEB27E37343007ED372 /* BassMidi-Bridging-Header.h */,
+				9903CFEC27E37343007ED372 /* MainInterface.storyboard */,
+				9903CFEF27E37343007ED372 /* Info.plist */,
+				9903CFD327E37343007ED372 /* Audio Unit */,
+				9903CFD727E37343007ED372 /* DSP */,
+				9903CFE427E37343007ED372 /* UI */,
+			);
+			path = BassMidi;
+			sourceTree = "<group>";
+		};
+		9903CFD327E37343007ED372 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				9903CFD427E37343007ED372 /* BassMidiAudioUnit.h */,
+				9903CFD527E37343007ED372 /* BassMidiAudioUnit.m */,
+				99EF7AC427E87E2800BFB6DB /* External Frameworks */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		9903CFD727E37343007ED372 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				9903CFE027E37343007ED372 /* BassMidiDSPKernel.hpp */,
+				9903CFE227E37343007ED372 /* BassMidiDSPKernel.mm */,
+				9994590B27FB4D6A00EBB00F /* BassMidiWrapper.hpp */,
+				9994590A27FB4D6A00EBB00F /* BassMidiWrapper.mm */,
+				9903CFD827E37343007ED372 /* Helpers */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		9903CFD827E37343007ED372 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9903CFD927E37343007ED372 /* DSPKernel.hpp */,
+				9903CFDB27E37343007ED372 /* DSPKernel.mm */,
+				9903CFDD27E37343007ED372 /* BufferedAudioBus.hpp */,
+				9903CFDF27E37343007ED372 /* BassMidiDSPKernelAdapter.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9903CFE427E37343007ED372 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9903CFE527E37343007ED372 /* AudioUnitViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9903CFFC27E3737F007ED372 /* BassMidiAudioUnitFramework */ = {
+			isa = PBXGroup;
+			children = (
+				9903CFFD27E3737F007ED372 /* BassMidiAudioUnitFramework.h */,
+				9903CFFE27E3737F007ED372 /* BassMidiAudioUnitFramework.docc */,
+			);
+			path = BassMidiAudioUnitFramework;
+			sourceTree = "<group>";
+		};
+		9903D00A27E3737F007ED372 /* BassMidiAudioUnitFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				9903D00B27E3737F007ED372 /* BassMidiAudioUnitFrameworkTests.swift */,
+			);
+			path = BassMidiAudioUnitFrameworkTests;
+			sourceTree = "<group>";
+		};
+		9903D03927E377A1007ED372 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99C9C9E528E4A3140050D1B0 /* Soundfonts */,
+				99C9C9D628E4A2550050D1B0 /* MIDI test files */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		99C9C9D628E4A2550050D1B0 /* MIDI test files */ = {
+			isa = PBXGroup;
+			children = (
+				99C9C9D728E4A2550050D1B0 /* Courante Bach Suite 1.mid */,
+				99C9C9D828E4A2550050D1B0 /* Drums only.mid */,
+				99C9C9D928E4A2550050D1B0 /* Tutu - Miles Davis.mid */,
+				99C9C9DB28E4A2550050D1B0 /* death-and-the-maiden3.mid */,
+				99C9C9DD28E4A2550050D1B0 /* book1-prelude01.mid */,
+			);
+			path = "MIDI test files";
+			sourceTree = "<group>";
+		};
+		99C9C9E528E4A3140050D1B0 /* Soundfonts */ = {
+			isa = PBXGroup;
+			children = (
+				99C9C9E628E4A3140050D1B0 /* Soundfont - FluidR3 GM (20011225).sf2 */,
+			);
+			path = Soundfonts;
+			sourceTree = "<group>";
+		};
+		99EF7AC427E87E2800BFB6DB /* External Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99EF7AC527E87E2800BFB6DB /* bassmidi.h */,
+				99EF7AC627E87E2800BFB6DB /* libbassmidi.xcframework */,
+				99EF7AC727E87E2800BFB6DB /* libbass.xcframework */,
+				99EF7AC827E87E2800BFB6DB /* bassmidi.txt */,
+				99EF7AC927E87E2800BFB6DB /* bassmidi.chm */,
+				99EF7ACA27E87E2800BFB6DB /* bass.h */,
+			);
+			path = "External Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9903CFF627E3737F007ED372 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9903D00D27E3737F007ED372 /* BassMidiAudioUnitFramework.h in Headers */,
+				9903D01E27E3745E007ED372 /* DSPKernel.hpp in Headers */,
+				9903D01C27E37448007ED372 /* BassMidiDSPKernelAdapter.h in Headers */,
+				9903D01A27E3742E007ED372 /* BassMidiDSPKernel.hpp in Headers */,
+				99EF7ACB27E87E2800BFB6DB /* bassmidi.h in Headers */,
+				99B6A03C27FC614C001B0D07 /* BassMidiWrapper.hpp in Headers */,
+				99EF7AD427E87E2800BFB6DB /* bass.h in Headers */,
+				9903D01827E373F1007ED372 /* BassMidiAudioUnit.h in Headers */,
+				9903D01F27E37461007ED372 /* BufferedAudioBus.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9903CF3027E3688F007ED372 /* BassMidiAudioUnitHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9903CF5B27E36892007ED372 /* Build configuration list for PBXNativeTarget "BassMidiAudioUnitHost" */;
+			buildPhases = (
+				9903CF2D27E3688F007ED372 /* Sources */,
+				9903CF2E27E3688F007ED372 /* Frameworks */,
+				9903CF2F27E3688F007ED372 /* Resources */,
+				9903CF8D27E369B9007ED372 /* Embed App Extensions */,
+				9903CFAD27E36D96007ED372 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9903D00F27E3737F007ED372 /* PBXTargetDependency */,
+			);
+			name = BassMidiAudioUnitHost;
+			packageProductDependencies = (
+			);
+			productName = BassMidiAudioUnitHost;
+			productReference = 9903CF3127E3688F007ED372 /* BassMidiAudioUnitHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9903CF4627E36892007ED372 /* BassMidiAudioUnitHostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9903CF5E27E36892007ED372 /* Build configuration list for PBXNativeTarget "BassMidiAudioUnitHostTests" */;
+			buildPhases = (
+				9903CF4327E36892007ED372 /* Sources */,
+				9903CF4427E36892007ED372 /* Frameworks */,
+				9903CF4527E36892007ED372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9903CF4927E36892007ED372 /* PBXTargetDependency */,
+			);
+			name = BassMidiAudioUnitHostTests;
+			productName = BassMidiAudioUnitHostTests;
+			productReference = 9903CF4727E36892007ED372 /* BassMidiAudioUnitHostTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9903CF5027E36892007ED372 /* BassMidiAudioUnitHostUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9903CF6127E36892007ED372 /* Build configuration list for PBXNativeTarget "BassMidiAudioUnitHostUITests" */;
+			buildPhases = (
+				9903CF4D27E36892007ED372 /* Sources */,
+				9903CF4E27E36892007ED372 /* Frameworks */,
+				9903CF4F27E36892007ED372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9903CF5327E36892007ED372 /* PBXTargetDependency */,
+			);
+			name = BassMidiAudioUnitHostUITests;
+			productName = BassMidiAudioUnitHostUITests;
+			productReference = 9903CF5127E36892007ED372 /* BassMidiAudioUnitHostUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9903CFD027E37343007ED372 /* BassMidi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9903CFF327E37343007ED372 /* Build configuration list for PBXNativeTarget "BassMidi" */;
+			buildPhases = (
+				9903CFCD27E37343007ED372 /* Sources */,
+				9903CFCE27E37343007ED372 /* Frameworks */,
+				9903CFCF27E37343007ED372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BassMidi;
+			productName = BassMidi;
+			productReference = 9903CFD127E37343007ED372 /* BassMidi.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9903CFFA27E3737F007ED372 /* BassMidiAudioUnitFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9903D01227E3737F007ED372 /* Build configuration list for PBXNativeTarget "BassMidiAudioUnitFramework" */;
+			buildPhases = (
+				9903CFF627E3737F007ED372 /* Headers */,
+				9903CFF727E3737F007ED372 /* Sources */,
+				9903CFF827E3737F007ED372 /* Frameworks */,
+				9903CFF927E3737F007ED372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BassMidiAudioUnitFramework;
+			productName = BassMidiAudioUnitFramework;
+			productReference = 9903CFFB27E3737F007ED372 /* BassMidiAudioUnitFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9903D00327E3737F007ED372 /* BassMidiAudioUnitFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9903D01527E3737F007ED372 /* Build configuration list for PBXNativeTarget "BassMidiAudioUnitFrameworkTests" */;
+			buildPhases = (
+				9903D00027E3737F007ED372 /* Sources */,
+				9903D00127E3737F007ED372 /* Frameworks */,
+				9903D00227E3737F007ED372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9903D00727E3737F007ED372 /* PBXTargetDependency */,
+				9903D00927E3737F007ED372 /* PBXTargetDependency */,
+			);
+			name = BassMidiAudioUnitFrameworkTests;
+			productName = BassMidiAudioUnitFrameworkTests;
+			productReference = 9903D00427E3737F007ED372 /* BassMidiAudioUnitFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9903CF2927E3688F007ED372 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					9903CF3027E3688F007ED372 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					9903CF4627E36892007ED372 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 9903CF3027E3688F007ED372;
+					};
+					9903CF5027E36892007ED372 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 9903CF3027E3688F007ED372;
+					};
+					9903CFD027E37343007ED372 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					9903CFFA27E3737F007ED372 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					9903D00327E3737F007ED372 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 9903CF3027E3688F007ED372;
+					};
+				};
+			};
+			buildConfigurationList = 9903CF2C27E3688F007ED372 /* Build configuration list for PBXProject "BassMidiAudioUnitHost" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9903CF2827E3688F007ED372;
+			packageReferences = (
+			);
+			productRefGroup = 9903CF3227E3688F007ED372 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9903CF3027E3688F007ED372 /* BassMidiAudioUnitHost */,
+				9903CF4627E36892007ED372 /* BassMidiAudioUnitHostTests */,
+				9903CF5027E36892007ED372 /* BassMidiAudioUnitHostUITests */,
+				9903CFD027E37343007ED372 /* BassMidi */,
+				9903CFFA27E3737F007ED372 /* BassMidiAudioUnitFramework */,
+				9903D00327E3737F007ED372 /* BassMidiAudioUnitFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9903CF2F27E3688F007ED372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C9C9E428E4A2550050D1B0 /* book1-prelude01.mid in Resources */,
+				99C9C9E928E4A3140050D1B0 /* Soundfont - FluidR3 GM (20011225).sf2 in Resources */,
+				9903CF4127E36892007ED372 /* LaunchScreen.storyboard in Resources */,
+				9903CF3E27E36892007ED372 /* Assets.xcassets in Resources */,
+				99C9C9E228E4A2550050D1B0 /* death-and-the-maiden3.mid in Resources */,
+				99C9C9E028E4A2550050D1B0 /* Tutu - Miles Davis.mid in Resources */,
+				99C9C9DF28E4A2550050D1B0 /* Drums only.mid in Resources */,
+				9903CF3C27E3688F007ED372 /* Main.storyboard in Resources */,
+				99C9C9DE28E4A2550050D1B0 /* Courante Bach Suite 1.mid in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CF4527E36892007ED372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CF4F27E36892007ED372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CFCF27E37343007ED372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9903CFDA27E37343007ED372 /* DSPKernel.hpp in Resources */,
+				9903CFEE27E37343007ED372 /* MainInterface.storyboard in Resources */,
+				99EF7AD227E87E2800BFB6DB /* bassmidi.chm in Resources */,
+				99EF7AD027E87E2800BFB6DB /* bassmidi.txt in Resources */,
+				9903CFE127E37343007ED372 /* BassMidiDSPKernel.hpp in Resources */,
+				9903CFDE27E37343007ED372 /* BufferedAudioBus.hpp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CFF927E3737F007ED372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EF7AD327E87E2800BFB6DB /* bassmidi.chm in Resources */,
+				99EF7AD127E87E2800BFB6DB /* bassmidi.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903D00227E3737F007ED372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9903CF2D27E3688F007ED372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9903CF3927E3688F007ED372 /* ViewController.swift in Sources */,
+				9903D03627E37775007ED372 /* Sequencer.swift in Sources */,
+				9903CF3527E3688F007ED372 /* AppDelegate.swift in Sources */,
+				9903CF3727E3688F007ED372 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CF4327E36892007ED372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9903CF4C27E36892007ED372 /* BassMidiAudioUnitHostTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CF4D27E36892007ED372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9903CF5627E36892007ED372 /* BassMidiAudioUnitHostUITests.swift in Sources */,
+				9903CF5827E36892007ED372 /* BassMidiAudioUnitHostUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CFCD27E37343007ED372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903CFF727E3737F007ED372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43710E5927E8847A00C20F9B /* BassMidiAudioUnit.swift in Sources */,
+				9903D01D27E3745C007ED372 /* DSPKernel.mm in Sources */,
+				9903D01927E37416007ED372 /* BassMidiAudioUnit.m in Sources */,
+				43B4C3FA27ECB25700769C37 /* BassMidiParameters.swift in Sources */,
+				43710E5B27E885AB00C20F9B /* FourCharCode+String.swift in Sources */,
+				9903D01B27E3743C007ED372 /* BassMidiDSPKernel.mm in Sources */,
+				9903CFFF27E3737F007ED372 /* BassMidiAudioUnitFramework.docc in Sources */,
+				99B6A03D27FC6174001B0D07 /* BassMidiWrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9903D00027E3737F007ED372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9903D00C27E3737F007ED372 /* BassMidiAudioUnitFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9903CF4927E36892007ED372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9903CF3027E3688F007ED372 /* BassMidiAudioUnitHost */;
+			targetProxy = 9903CF4827E36892007ED372 /* PBXContainerItemProxy */;
+		};
+		9903CF5327E36892007ED372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9903CF3027E3688F007ED372 /* BassMidiAudioUnitHost */;
+			targetProxy = 9903CF5227E36892007ED372 /* PBXContainerItemProxy */;
+		};
+		9903D00727E3737F007ED372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9903CFFA27E3737F007ED372 /* BassMidiAudioUnitFramework */;
+			targetProxy = 9903D00627E3737F007ED372 /* PBXContainerItemProxy */;
+		};
+		9903D00927E3737F007ED372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9903CF3027E3688F007ED372 /* BassMidiAudioUnitHost */;
+			targetProxy = 9903D00827E3737F007ED372 /* PBXContainerItemProxy */;
+		};
+		9903D00F27E3737F007ED372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9903CFFA27E3737F007ED372 /* BassMidiAudioUnitFramework */;
+			targetProxy = 9903D00E27E3737F007ED372 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9903CF3A27E3688F007ED372 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9903CF3B27E3688F007ED372 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9903CF3F27E36892007ED372 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9903CF4027E36892007ED372 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9903CFEC27E37343007ED372 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9903CFED27E37343007ED372 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9903CF5927E36892007ED372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9903CF5A27E36892007ED372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9903CF5C27E36892007ED372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BassMidiAudioUnitHost/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9903CF5D27E36892007ED372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BassMidiAudioUnitHost/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9903CF5F27E36892007ED372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitHostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BassMidiAudioUnitHost.app/BassMidiAudioUnitHost";
+			};
+			name = Debug;
+		};
+		9903CF6027E36892007ED372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitHostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BassMidiAudioUnitHost.app/BassMidiAudioUnitHost";
+			};
+			name = Release;
+		};
+		9903CF6227E36892007ED372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitHostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BassMidiAudioUnitHost;
+			};
+			name = Debug;
+		};
+		9903CF6327E36892007ED372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitHostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BassMidiAudioUnitHost;
+			};
+			name = Release;
+		};
+		9903CFF427E37343007ED372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BassMidi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BassMidi;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitHost.BassMidi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BassMidi/BassMidi-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9903CFF527E37343007ED372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BassMidi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BassMidi;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitHost.BassMidi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BassMidi/BassMidi-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9903D01327E3737F007ED372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9903D01427E3737F007ED372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9903D01627E3737F007ED372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BassMidiAudioUnitHost.app/BassMidiAudioUnitHost";
+			};
+			name = Debug;
+		};
+		9903D01727E3737F007ED372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X263RTW2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newzik.BassMidiAudioUnitFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BassMidiAudioUnitHost.app/BassMidiAudioUnitHost";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9903CF2C27E3688F007ED372 /* Build configuration list for PBXProject "BassMidiAudioUnitHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9903CF5927E36892007ED372 /* Debug */,
+				9903CF5A27E36892007ED372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9903CF5B27E36892007ED372 /* Build configuration list for PBXNativeTarget "BassMidiAudioUnitHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9903CF5C27E36892007ED372 /* Debug */,
+				9903CF5D27E36892007ED372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9903CF5E27E36892007ED372 /* Build configuration list for PBXNativeTarget "BassMidiAudioUnitHostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9903CF5F27E36892007ED372 /* Debug */,
+				9903CF6027E36892007ED372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9903CF6127E36892007ED372 /* Build configuration list for PBXNativeTarget "BassMidiAudioUnitHostUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9903CF6227E36892007ED372 /* Debug */,
+				9903CF6327E36892007ED372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9903CFF327E37343007ED372 /* Build configuration list for PBXNativeTarget "BassMidi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9903CFF427E37343007ED372 /* Debug */,
+				9903CFF527E37343007ED372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9903D01227E3737F007ED372 /* Build configuration list for PBXNativeTarget "BassMidiAudioUnitFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9903D01327E3737F007ED372 /* Debug */,
+				9903D01427E3737F007ED372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9903D01527E3737F007ED372 /* Build configuration list for PBXNativeTarget "BassMidiAudioUnitFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9903D01627E3737F007ED372 /* Debug */,
+				9903D01727E3737F007ED372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9903CF2927E3688F007ED372 /* Project object */;
+}
