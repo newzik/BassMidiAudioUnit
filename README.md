@@ -72,3 +72,4 @@ The [Newzik app](https://apps.apple.com/app/newzik-lecteur-de-partitions/id96696
 
 ## License 
 BassMidiAudioUnit is distributed under the MIT license. See [LICENSE](LICENSE) for details.
+Please note that this license does not cover the BASS/BASSMIDI libraries, which need to be licensed separately.
